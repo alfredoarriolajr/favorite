@@ -23,7 +23,7 @@ export default function Home() {
                 console.log(res.data);
                 setAllFavorites(res.data);
             });
-            // eslint-disable-next-line react-hooks/exhaustive-deps
+            // eslint-disable-next-line react-hooks/exhaustive-deps 
     }, []);
 
     return (
