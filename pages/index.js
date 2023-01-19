@@ -57,7 +57,7 @@ export default function Home() {
                         onClick={() => {
                             supabase
                                 .from('favorites')
-                                .insert({ favorite: addFavorite })
+                                .upsert({ favorite: addFavorite })
                                 .then((res) => {
                                     console.log(res);
                                 })
