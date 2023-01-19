@@ -69,7 +69,7 @@ export default function Home() {
                     </button>
                     {allFavorites.map((favorite) => {
                         return (
-                            <div className={styles.grid}>
+                            <div className={styles.grid} key={favorite.id}>
                                 <div className={styles.card}>
                                     <h3>{favorite.favorite}</h3>
                                     <p>
